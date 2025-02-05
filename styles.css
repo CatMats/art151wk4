@@ -1,0 +1,51 @@
+body{
+	font-family: "Courier New";
+	background-image: linear-gradient(#ffb300, #ffe878);
+}
+
+
+.smileybody{
+	text-align: center;
+	width: 0px;
+	length: 50px;
+	border: solid;
+	padding: 200px;
+	border-radius: 200px;
+	background-color: yellow;
+	font-size: 45px;
+	display: flex;
+	animation: ;
+}
+
+.smileyeyes{
+	z-index: 5;
+	width: 0px;
+	length: 20px;
+	border: solid;
+	padding: 30px;
+	border-radius: 200px;
+	background-color: black;
+	font-size: 45px;
+}
+
+.squishy{
+	animation: squish 5s ease-out infinite;
+}
+
+.tilt{
+	animation: tilting 5s ease-out infinite;
+
+}
+@keyframes tilting{
+	0%{transform: rotate(-20deg);}
+	50%{transform: rotate(20deg);}
+    100%{transform: rotate(-20deg);}
+}
+
+@keyframes squish{
+	0%{transform: scaleX(1);}
+	50%{transform: scaleX(0.25);
+		transform: scaleY(1.25);}
+	100%{transform: scaleX(1);
+	   transform: scaleY(1);}
+}
